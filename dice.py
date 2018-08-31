@@ -24,5 +24,9 @@ def dice(number):
             row2 = row1
     return '-' * 7 + f'\n| {row1} |\n| {row2} |\n| {row3} |\n' + '-' * 7
 
-number = randint(1,6)
-print(dice(number))
+number1 = randint(1,6)
+number2 = randint(1,6)
+print(dice(number1))
+print(dice(number2))
+if number1 + number2 == 7:
+    print('You WIN!')
