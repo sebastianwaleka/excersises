@@ -3,3 +3,5 @@ venv/
 .pytest_cache/
 zjazd2/funkcje/.pytest_cache/
 zad_domowe/.pytest_cache
+zjazd3/.pytest_cache
+zjazd3/.ipynb_checkpoints
