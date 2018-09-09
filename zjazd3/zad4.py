@@ -56,7 +56,7 @@ class Basket:
         return suma
 
     def generate_report(self):
-
+        pass
 
 
 def test_product_exist():
