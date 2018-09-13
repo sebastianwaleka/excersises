@@ -13,11 +13,20 @@ so she must avoid the clouds at indexes 1 and 5. She could follow the following 
 Complete the jumpingOnClouds function in the editor below.
 It should return the minimum number of jumps required, as an integer
 '''
+
+
 def jumping_on_clouds(clouds, way):
     steps = 0
-    pass
-    # else:
-    #     return 'Number of clouds must be equal to way lenght.'
+    i = 0
+    while i < clouds - 1:
+        if i + 2 < clouds and way[i + 2] == '0':
+            steps += 1
+            i += 2
+        else:
+            steps += 1
+            i += 1
+
+    return steps
 
 
 def test_jumping_on_clouds_correct():
